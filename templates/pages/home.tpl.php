@@ -1,13 +1,8 @@
 <article>
     <header>
         <h2>Üdvözöljük a Piznéria honlapnál</h2>
-        <p>Modern kisvállalati weboldal készítése PHP, HTML, CSS és JavaScript használatával.</p>
     </header>
     <section class="hero">
-        <div class="intro">
-            <h3>Bemutatjuk a szolgáltatást</h3>
-            <p>Ezen az oldalon megvalósítottuk a regisztrációt, belépést, üzenetküldést, képfeltöltést és egyszerű CRUD felületet.</p>
-        </div>
         <div class="media-block">
             <figure>
                 <figcaption class="video-caption">Lokális videó</figcaption>
@@ -25,7 +20,7 @@
     <section class="location">
         <h3>Fizikai cím</h3>
         <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.3375296155727!2d19.66695091525771!3d46.89607994478184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da7a6c479e1d%3A0xc8292b3f6dc69e7f!2sPallasz+Ath%C3%A9n%C3%A9+Egyetem+GAMF+Kar!5e0!3m2!1shu!2shu!4v1475753185783" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d935.6098280982472!2d19.994657417756414!3d46.8705115274617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743e15a020c7b7b%3A0x76d5e38c37f602b5!2sPizzabox!5e1!3m2!1shu!2shu!4v1778336721620!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 </article>

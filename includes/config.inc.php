@@ -1,18 +1,17 @@
 <?php
 $ablakcim = array(
-    'cim' => 'Pizneria.',
+    'cim' => 'Pizneria',
 );
 
 $fejlec = array(
     'kepforras' => 'logo.png',
     'kepalt' => 'logo',
     'cim' => 'WEB Programozás Gyakorlat Projekt',
-    'motto' => 'Fedezd fel a legjobb pizzázót és webfejlesztési projekteket!'
 );
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").' - Butor Bence (HMIK2Y), Nagy Viktor (D7GZCG)',
-    'ceg' => 'Piznéria.'
+    'ceg' => 'Piznéria'
 );
 
 $dbConfig = array(

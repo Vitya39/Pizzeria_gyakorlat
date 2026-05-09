@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $ablakcim['cim'] . (isset($fejlec['motto']) ? ' | '.$fejlec['motto'] : '') ?></title>
+    <title><?= $ablakcim['cim']) ?></title>
     <link rel="stylesheet" href="./styles/stilus.css" type="text/css">
     <?php if(file_exists('./styles/'.$keres['fajl'].'.css')) { ?><link rel="stylesheet" href="./styles/<?= $keres['fajl']?>.css" type="text/css"><?php } ?>
 </head>
@@ -14,7 +14,6 @@
             <img src="./images/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
             <div>
                 <h1><?= $fejlec['cim'] ?></h1>
-                <?php if (isset($fejlec['motto'])) { ?><p class="motto"><?= $fejlec['motto'] ?></p><?php } ?>
             </div>
         </div>
         <div class="user-info">
