@@ -1,23 +1,43 @@
-    <form action = "belep" method = "post">
-      <fieldset>
-        <legend>Bejlentkezés</legend>
-        <br>
-        <input type="text" name="felhasznalo" placeholder="felhasználó" required><br><br>
-        <input type="password" name="jelszo" placeholder="jelszó" required><br><br>
-        <input type="submit" name="belepes" value="Belépés">
-        <br>&nbsp;
-      </fieldset>
+<section>
+    <h2>Belépés</h2>
+    <?php if (isset($uzenet)) { ?><p class="notice"><?= htmlspecialchars($uzenet) ?></p><?php } ?>
+    <form action="belep" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Bejelentkezés</legend>
+            <label>
+                <span>Felhasználónév</span>
+                <input type="text" name="felhasznalo" placeholder="felhasználó" value="<?= isset($_POST['felhasznalo']) ? htmlspecialchars($_POST['felhasznalo']) : '' ?>" required>
+            </label>
+            <label>
+                <span>Jelszó</span>
+                <input type="password" name="jelszo" placeholder="jelszó" required>
+            </label>
+            <input type="submit" name="belepes" value="Belépés">
+        </fieldset>
     </form>
-    <h3>Regisztrálja magát, ha még nem felhasználó!</h2>
-    <form action = "regisztral" method = "post">
-      <fieldset>
-        <legend>Regisztráció</legend>
-        <br>
-        <input type="text" name="vezeteknev" placeholder="vezetéknév" required><br><br>
-        <input type="text" name="utonev" placeholder="utónév" required><br><br>
-        <input type="text" name="felhasznalo" placeholder="felhasználói név" required><br><br>
-        <input type="password" name="jelszo" placeholder="jelszó" required><br><br>
-        <input type="submit" name="regisztracio" value="Regisztráció">
-        <br>&nbsp;
-      </fieldset>
+</section>
+<section>
+    <h2>Regisztráció</h2>
+    <form action="regisztral" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Új felhasználó</legend>
+            <label>
+                <span>Vezetéknév</span>
+                <input type="text" name="vezeteknev" placeholder="vezetéknév" required>
+            </label>
+            <label>
+                <span>Utónév</span>
+                <input type="text" name="utonev" placeholder="utónév" required>
+            </label>
+            <label>
+                <span>Felhasználói név</span>
+                <input type="text" name="felhasznalo" placeholder="felhasználói név" required>
+            </label>
+            <label>
+                <span>Jelszó</span>
+                <input type="password" name="jelszo" placeholder="jelszó" required>
+            </label>
+            <input type="submit" name="regisztracio" value="Regisztráció">
+        </fieldset>
     </form>
+</section>
