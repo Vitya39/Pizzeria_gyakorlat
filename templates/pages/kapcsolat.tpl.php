@@ -7,19 +7,19 @@
             <legend>Üzenet küldése</legend>
             <label>
                 <span>Név</span>
-                <input type="text" name="nev" value="<?= htmlspecialchars($formData['nev']) ?>" required>
+                <input type="text" name="nev" value="<?= htmlspecialchars($formData['nev']) ?>">
             </label>
             <label>
                 <span>E-mail cím</span>
-                <input type="email" name="email" value="<?= htmlspecialchars($formData['email']) ?>" required>
+                <input type="email" name="email" value="<?= htmlspecialchars($formData['email']) ?>" >
             </label>
             <label>
                 <span>Tárgy</span>
-                <input type="text" name="targy" value="<?= htmlspecialchars($formData['targy']) ?>" required>
+                <input type="text" name="targy" value="<?= htmlspecialchars($formData['targy']) ?>">
             </label>
             <label>
                 <span>Üzenet</span>
-                <textarea name="uzenet" rows="5" required><?= htmlspecialchars($formData['uzenet']) ?></textarea>
+                <textarea name="uzenet" rows="5"><?= htmlspecialchars($formData['uzenet']) ?></textarea>
             </label>
             <input type="submit" value="Küldés">
         </fieldset>
