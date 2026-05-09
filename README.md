@@ -1,2 +1,2 @@
 # Pizzeria_gyakorlat
-**Weboldal: (pizneria.infora.hu)[http://pizneria.infora.hu]**
+**Weboldal: [http://pizneria.infora.hu]**
