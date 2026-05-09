@@ -1,6 +1,49 @@
-<h2>Adatok:</h2>
-<p>Ügyvezető: <strong>Valaki Az</strong></p>
-<p>E-mail: <strong>valaki.az@minihonlap.hu</strong></p>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.3375296155727!2d19.66695091525771!3d46.89607994478184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da7a6c479e1d%3A0xc8292b3f6dc69e7f!2sPallasz+Ath%C3%A9n%C3%A9+Egyetem+GAMF+Kar!5e0!3m2!1shu!2shu!4v1475753185783" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-<br>
-<a target="_blank" href="https://www.google.hu/maps/place/Pallasz+Ath%C3%A9n%C3%A9+Egyetem+GAMF+Kar/@46.8960799,19.6669509,17z/data=!3m1!4b1!4m5!3m4!1s0x4743da7a6c479e1d:0xc8292b3f6dc69e7f!8m2!3d46.8960763!4d19.6691396?hl=hu">Nagyobb térkép</a>
+<section>
+    <h2>Kapcsolat</h2>
+    <p>Használja az alábbi űrlapot, hogy üzenetet küldjön az oldal tulajdonosának.</p>
+    <?php if (isset($uploadMessage)) { ?><p class="notice"><?= htmlspecialchars($uploadMessage) ?></p><?php } ?>
+    <form id="contact-form" action="kapcsolat" method="post" novalidate>
+        <fieldset>
+            <legend>Üzenet küldése</legend>
+            <label>
+                <span>Név</span>
+                <input type="text" name="nev" value="<?= htmlspecialchars($formData['nev']) ?>" required>
+            </label>
+            <label>
+                <span>E-mail cím</span>
+                <input type="email" name="email" value="<?= htmlspecialchars($formData['email']) ?>" required>
+            </label>
+            <label>
+                <span>Tárgy</span>
+                <input type="text" name="targy" value="<?= htmlspecialchars($formData['targy']) ?>" required>
+            </label>
+            <label>
+                <span>Üzenet</span>
+                <textarea name="uzenet" rows="5" required><?= htmlspecialchars($formData['uzenet']) ?></textarea>
+            </label>
+            <input type="submit" value="Küldés">
+        </fieldset>
+    </form>
+</section>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    var form = event.target;
+    var errors = [];
+    if (!form.nev.value.trim()) {
+        errors.push('A név megadása kötelező.');
+    }
+    if (!form.email.value.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email.value)) {
+        errors.push('Érvényes e-mail címet adjon meg.');
+    }
+    if (!form.targy.value.trim()) {
+        errors.push('A tárgy megadása kötelező.');
+    }
+    if (!form.uzenet.value.trim()) {
+        errors.push('Az üzenet mező nem lehet üres.');
+    }
+    if (errors.length) {
+        event.preventDefault();
+        alert(errors.join('\n'));
+    }
+});
+</script>
