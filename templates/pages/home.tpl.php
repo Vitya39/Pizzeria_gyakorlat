@@ -17,7 +17,7 @@
                 </video>
             </figure>
             <figure>
-                <figcaption class="video-caption">Youtube bemutató</figcaption>
+                <figcaption class="video-caption">Zenebona</figcaption>
                 <iframe width="320" height="180" src="https://www.youtube.com/embed/ruy3N-l_p4U" title="YouTube video" frameborder="0" allowfullscreen></iframe>
             </figure>
         </div>
