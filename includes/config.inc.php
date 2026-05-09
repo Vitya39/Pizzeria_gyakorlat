@@ -18,8 +18,8 @@ $lablec = array(
 $dbConfig = array(
     'host' => 'localhost',
     'dbname' => 'login',
-    'user' => 'root',
-    'pass' => ''
+    'user' => 'login',
+    'pass' => 'asdasd'
 );
 
 $oldalak = array(
