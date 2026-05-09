@@ -17,7 +17,7 @@
                 </video>
             </figure>
             <figure>
-                <figcaption>Youtube bemutató</figcaption>
+                <figcaption>Zenebona</figcaption>
                 <iframe width=\320\ height=\180\ src=<iframe width="1349" height="759" src="https://www.youtube.com/embed/ruy3N-l_p4U" title="I NEED DOPAMINE | Liquid Dnb / Jungle Mix to Hard Coding &amp; Focus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> title=\YouTube video\ frameborder=\0\ allowfullscreen></iframe>
             </figure>
         </div>
